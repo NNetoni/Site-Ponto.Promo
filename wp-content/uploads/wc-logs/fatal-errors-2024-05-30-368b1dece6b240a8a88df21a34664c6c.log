@@ -1,0 +1,20 @@
+2024-05-30T14:58:16+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#1 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-includes\plugin.php(524): WP_Hook->do_action(Array)
+#2 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-content\plugins\woocommerce\packages\action-scheduler\classes\actions\ActionScheduler_Action.php(22): do_action_ref_array('wpforms_process...', Array)
+#3 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(181, 'Async Request')
+#5 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-includes\class-wp-hook.php(307): ActionScheduler_QueueRunner->run('Async Request')
+#7 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#8 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#9 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-content\plugins\woocommerce\includes\libraries\wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-includes\class-wp-hook.php(307): WP_Async_Request->maybe_handle('')
+#12 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#13 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#14 D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-admin\admin-ajax.php(202): do_action('wp_ajax_nopriv_...')
+#15 {main}
+  thrown, em D:\Program Files (x86)\xampp\htdocs\pontopromo\wp-includes\class-wp-hook.php, na linha 307
+
